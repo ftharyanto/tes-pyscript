@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo32.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="manifest" href="manifest.json" />
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+
 </head>
 
-<body style='font-size: 20px;'>
-    <h1>PyScript - HTTP Requests pyfetch</h1>
-    <p id="request_output"></p>
-    <button id="btn-test">test</button>
+<body>
+    <div class="container">
+        <input type="text" class="datepicker" id="date1">
+        <textarea id="result" class="materialize-textarea"></textarea>
+        <a class="waves-effect waves-light btn" id="btn1">button</a>
+    </div>
 
+    <!-- <iframe
+        src="https://script.google.com/macros/s/AKfycbzWwqRjglSud8RJ9gpTh0FnxvLgWMllz_fBwbpZPXjDTezgbRU0QbfgKhEb10ThoJ8m/exec"
+        frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%" scrolling="auto"></iframe> -->
+
+        
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    <py-config>
+        packages = ["beautifulsoup4"]
+    </py-config>
     <py-script src="script.py"></py-script>
 </body>
 
