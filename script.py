@@ -16,7 +16,7 @@ async def get_status(event):
     response = await pyfetch(url=link, method="GET", mode='no-cors')
     output = await response.string()
 
-    convert to beautiful soup 
+    # convert to beautiful soup 
     soup = bs(output, 'html.parser') 
     log_station = soup.find_all('table')
     console.log(log_station)
